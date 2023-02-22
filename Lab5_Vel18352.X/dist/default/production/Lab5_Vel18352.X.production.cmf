@@ -1,0 +1,323 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta> <reloc>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$build/default/production/Lab5.o
+resVect code 0 0 0 3 2 1
+CODE - 0 0 0 1AF 2 1
+intVect code 0 0 0 18 2 1
+udata_bank0 BANK0 1 20 20 8 1 1
+udata_shr COMMON 1 70 70 2 1 1
+config CONFIG 4 2007 2007 2 2 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 28-6F 1
+RAM A0-EF 1
+RAM 110-16F 1
+RAM 190-1EF 1
+BANK0 28-6F 1
+BANK1 A0-EF 1
+BANK2 110-16F 1
+BANK3 190-1EF 1
+CONST 1AF-1FFF 2
+ENTRY 1AF-1FFF 2
+IDLOC 2000-2003 2
+CODE 1AF-1FFF 2
+COMMON 72-7F 1
+EEDATA 2100-21FF 2
+STRCODE 1AF-1FFF 2
+STRING 1AF-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$build/default/production/Lab5.o
+0 CODE ABS >84:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+100 CODE ABS >87:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+101 CODE ABS >88:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+102 CODE ABS >89:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+103 CODE ABS >90:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+104 CODE ABS >91:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+105 CODE ABS >94:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+106 CODE ABS >95:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+107 CODE ABS >96:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+108 CODE ABS >99:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+10A CODE ABS >100:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+10B CODE ABS >101:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+10C CODE ABS >103:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+10E CODE ABS >104:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+10F CODE ABS >105:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+111 CODE ABS >106:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+112 CODE ABS >107:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+114 CODE ABS >108:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+115 CODE ABS >109:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+117 CODE ABS >110:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+118 CODE ABS >112:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+119 CODE ABS >113:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+11A CODE ABS >115:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+11B CODE ABS >116:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+11C CODE ABS >117:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+11D CODE ABS >119:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+11F CODE ABS >120:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+120 CODE ABS >121:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+122 CODE ABS >122:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+123 CODE ABS >123:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+125 CODE ABS >124:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+126 CODE ABS >125:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+128 CODE ABS >126:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+129 CODE ABS >127:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+12A CODE ABS >130:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+12C CODE ABS >131:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+12D CODE ABS >132:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+12E CODE ABS >133:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+130 CODE ABS >134:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+131 CODE ABS >135:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+132 CODE ABS >136:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+133 CODE ABS >139:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+135 CODE ABS >140:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+136 CODE ABS >141:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+137 CODE ABS >142:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+138 CODE ABS >143:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+139 CODE ABS >144:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+13A CODE ABS >147:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+13C CODE ABS >148:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+13D CODE ABS >149:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+13E CODE ABS >150:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+13F CODE ABS >151:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+140 CODE ABS >152:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+141 CODE ABS >153:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+142 CODE ABS >156:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+144 CODE ABS >157:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+145 CODE ABS >158:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+146 CODE ABS >159:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+147 CODE ABS >160:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+148 CODE ABS >161:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+149 CODE ABS >162:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+14B CODE ABS >163:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+14C CODE ABS >164:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+14D CODE ABS >165:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+14E CODE ABS >166:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+14F CODE ABS >169:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+150 CODE ABS >170:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+151 CODE ABS >171:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+152 CODE ABS >172:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+153 CODE ABS >175:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+154 CODE ABS >176:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+155 CODE ABS >177:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+156 CODE ABS >178:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+157 CODE ABS >179:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+158 CODE ABS >180:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+159 CODE ABS >181:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+15A CODE ABS >182:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+15B CODE ABS >183:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+15C CODE ABS >184:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+15D CODE ABS >185:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+15E CODE ABS >186:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+15F CODE ABS >187:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+160 CODE ABS >188:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+161 CODE ABS >189:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+162 CODE ABS >190:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+163 CODE ABS >191:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+164 CODE ABS >192:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+165 CODE ABS >193:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+166 CODE ABS >194:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+167 CODE ABS >197:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+168 CODE ABS >198:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+169 CODE ABS >199:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+16A CODE ABS >200:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+16B CODE ABS >201:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+16C CODE ABS >202:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+16D CODE ABS >203:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+16E CODE ABS >204:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+16F CODE ABS >205:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+170 CODE ABS >206:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+171 CODE ABS >209:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+172 CODE ABS >210:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+173 CODE ABS >211:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+174 CODE ABS >212:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+175 CODE ABS >213:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+176 CODE ABS >214:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+177 CODE ABS >215:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+178 CODE ABS >216:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+179 CODE ABS >217:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+17A CODE ABS >218:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+17B CODE ABS >221:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+17C CODE ABS >222:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+17D CODE ABS >223:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+17E CODE ABS >224:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+17F CODE ABS >225:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+180 CODE ABS >226:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+181 CODE ABS >229:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+182 CODE ABS >230:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+183 CODE ABS >231:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+184 CODE ABS >232:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+185 CODE ABS >233:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+186 CODE ABS >234:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+187 CODE ABS >237:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+188 CODE ABS >238:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+189 CODE ABS >239:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+18A CODE ABS >240:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+18B CODE ABS >241:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+18C CODE ABS >242:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+18D CODE ABS >246:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+18E CODE ABS >247:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+18F CODE ABS >248:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+190 CODE ABS >249:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+191 CODE ABS >250:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+192 CODE ABS >251:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+193 CODE ABS >252:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+194 CODE ABS >253:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+195 CODE ABS >254:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+196 CODE ABS >255:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+197 CODE ABS >256:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+198 CODE ABS >257:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+199 CODE ABS >258:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+19A CODE ABS >259:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+19B CODE ABS >260:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+19C CODE ABS >263:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+19D CODE ABS >264:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+19E CODE ABS >265:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+19F CODE ABS >266:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+1A0 CODE ABS >267:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+1A1 CODE ABS >268:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+1A2 CODE ABS >269:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+1A3 CODE ABS >270:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+1A4 CODE ABS >271:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+1A5 CODE ABS >272:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+1A6 CODE ABS >275:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+1A7 CODE ABS >276:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+1A8 CODE ABS >277:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+1A9 CODE ABS >278:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+1AA CODE ABS >279:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+1AB CODE ABS >280:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+1AC CODE ABS >281:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+1AD CODE ABS >282:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+1AE CODE ABS >283:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+0 intVect code >57:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+4 intVect code >59:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+5 intVect code >60:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+6 intVect code >61:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+7 intVect code >63:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+8 intVect code >64:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+9 intVect code >65:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+A intVect code >66:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+B intVect code >68:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+C intVect code >69:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+D intVect code >70:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+E intVect code >71:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+F intVect code >72:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+10 intVect code >75:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+12 intVect code >76:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+13 intVect code >77:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+14 intVect code >78:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+15 intVect code >79:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+16 intVect code >80:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+17 intVect code >81:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+0 resVect code >50:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+0 resVect code >52:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+2 resVect code >53:C:\Users\colum\MPLABXProjects\Lab5_Vel18352.X\Lab5.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__Hspace_0 1AF 0 ABS 0 - -
+__Hspace_1 72 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 4010 0 ABS 0 - -
+__Hudata_bank0 0 0 ABS 0 udata_bank0 -
+__Hudata_bank1 0 0 ABS 0 udata_bank1 -
+__Hudata_bank2 0 0 ABS 0 udata_bank2 -
+__Hudata_bank3 0 0 ABS 0 udata_bank3 -
+__LresVect 0 0 code 0 resVect -
+__Hedata 0 0 ABS 0 edata -
+__Hudata 0 0 ABS 0 udata -
+__Hconfig 4012 0 CONFIG 4 config -
+__Ledata 0 0 ABS 0 edata -
+__Ludata 0 0 ABS 0 udata -
+__HCODE 35E 0 ABS 0 CODE -
+__Hcode 0 0 ABS 0 code -
+__Hdata 0 0 ABS 0 data -
+__LCODE 0 0 ABS 0 CODE -
+__Lcode 0 0 ABS 0 code -
+__Ldata 0 0 ABS 0 data -
+__S0 0 0 ABS 0 - -
+__S1 72 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+__HresVect 6 0 code 0 resVect -
+__Lconfig 0 0 CONFIG 4 config -
+__LintVect 0 0 code 0 intVect -
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+__Ludata_bank0 0 0 ABS 0 udata_bank0 -
+__Ludata_bank1 0 0 ABS 0 udata_bank1 -
+__Ludata_bank2 0 0 ABS 0 udata_bank2 -
+__Ludata_bank3 0 0 ABS 0 udata_bank3 -
+__Hudata_shr 0 0 ABS 0 udata_shr -
+__Ludata_shr 0 0 ABS 0 udata_shr -
+__HintVect 30 0 code 0 intVect -
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+udata_bank0 1 20 20 8 1
+udata_shr 1 70 70 2 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
